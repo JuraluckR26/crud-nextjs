@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+    gap: 2rem;
+    position: absolute;
+}
+
+.sidebar_wrapper {
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    right: 0;
+    top: 4.7rem;
+    border: none;
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateX(50%);
+    font-size: 1.1rem;
+}
+
+[data-collapse="true"] {
+    width: 5.3rem;
+}
+
+[data-collapse="true"] .sidebar_name, [data-collapse="true"] .sidebar_logo-name {
+    display: none;
+}
+
+/* sidebar */
+
+.sidebar {
+    width: 17rem;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+    transition: all 0.3 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+.sidebar_top {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #A367B1;
+}
+
+.sidebar_logo {
+    width: 3.4rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.sidebar_list {
+    list-style: none;
+}
+
+.sidebar_link {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem 1rem;
+    display: flex;
+    background-color: #f3f4f6;
+    margin-bottom: 1rem;
+    border-bottom: 0.8rem;
+}
+
+.sidebar_icon {
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.sidebar_name {
+    margin-left: 0.5rem;
+}
+
+.sidebar_logo-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
