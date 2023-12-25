@@ -2,8 +2,8 @@ import React from "react";
 
 
     const posts = [
-        {id: 1, content: "I Love Cats", time: 'Yesterday 11:30'},
-        {id: 2, content: "Have a good day everyone :D", time: '11 June 17:30'}
+        {id: 2, content: "I Love Cats", time: 'Yesterday 11:30'},
+        {id: 1, content: "Have a good day everyone :D", time: '11 June 17:30'}
     ]
 
     function addPost(post) {
@@ -31,7 +31,8 @@ import React from "react";
 
 
     function showPosts() {
-        return posts
+        const sortPosts = posts.sort((a, b) => b.id - a.id)
+        return sortPosts
     }
 
 
