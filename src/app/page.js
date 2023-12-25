@@ -156,31 +156,6 @@ export default function Home(props) {
     <div className={style.body}>
       <Header></Header>
       <main className='bg-[#F2F1EB] h-full max-h-max'>
-      {/* <main className='font-[Poppins] bg-gradient-to-t from-[#AC87C5] to-[#FFE5E5] h-full max-h-max'> */}
-      {/* {isWindowLessThan400px ? (
-        <div>
-          
-        </div>
-        ) : (
-          <div>
-            <Header></Header>
-            <div className="layout">
-            
-              <Sidebar/>
-              <exampleObject/>
-              <div className='bg-white dark:bg-slate-900 py-5'>
-                <AddPost content={content} setContent={setContent} addPost={addPost}/>
-                <GetPost posts={posts} setPosts={setPosts} />
-              </div>
-              <div className="flex flex-row">
-  <div className="basis-1/4">01</div>
-  <div className="basis-1/4">02</div>
-  <div className="basis-1/2">03</div>
-</div>
-            </div>
-          </div>
-          
-      )} */}
         {isWindowLessThan400px ? (
           <div>
             <div className='bg-white py-5 h-full'>

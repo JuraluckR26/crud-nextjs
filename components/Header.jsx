@@ -43,20 +43,37 @@ const Header = () => {
                 </div>
               </div>
             ) : <div className="col-end-7 col-span-2">
-                  <div className="flex justify-end p-4">
-                    <div className="flex items-center bg-[#9EB8D9] px-3 py-2 rounded-full">
-                        <Image
-                          src={cat}
-                          className="h-10 w-10 rounded-full border-0"
-                        />
-                        <div className="px-2">
-                          <strong className={style.loginName}>Juraluck Ruji</strong>
+                    <div class="flex flex-row">
+                      <div class="basis-1/5 md:basis-1/4"></div>
+                      <div class="basis-1/4 md:basis-1/2">
+                        <div class="hidden sm:ml-6 sm:block">
+                          <div class="h-20 grid grid-cols-6 gap-2 content-end ...">
+                            {/* <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a> */}
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">Board</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">News</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                          </div>
                         </div>
-                      </div> 
-                  
-                  </div>
+                      </div>
+                      <div class="basis-1/2 md:basis-1/4">
+                        <div className="flex justify-end p-4">
+                          <div className="flex items-center bg-[#9EB8D9] px-3 py-2 rounded-full">
+                              <Image
+                                src={cat}
+                                className="h-10 w-10 rounded-full border-0"
+                              />
+                              <div className="px-2">
+                                <strong className={style.loginName}>Juraluck Ruji</strong>
+                              </div>
+                            </div> 
+                        </div>  
+                      </div>
+                    </div>
                 </div>
-          }
+            }
         </div>
       </div>
     )
